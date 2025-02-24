@@ -1,0 +1,110 @@
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9; /* Fondo claro y limpio */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    color: #333; /* Color oscuro para el título */
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    color: #666; /* Color gris para el texto */
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .about-images {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+  }
+  
+  .about-image:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  }
+  
+  .about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-item {
+    background-color: #fff; /* Fondo blanco */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-item:hover {
+    transform: translateY(-10px); /* Efecto de levitación */
+  }
+  
+  .stat-item h3 {
+    font-size: 2rem;
+    color: #4CAF50; /* Color verde para los números */
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-item p {
+    font-size: 1rem;
+    color: #666; /* Color gris para el texto */
+  }
+  
+  .about-cta {
+    display: inline-block;
+    background-color: #4CAF50; /* Color verde para el botón */
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-cta:hover {
+    background-color: #45a049; /* Color verde oscuro al pasar el mouse */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-images {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-image {
+      max-width: 100%;
+    }
+  
+    .about-stats {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .stat-item {
+      width: 100%;
+    }
+  }

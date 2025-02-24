@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #333;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+    width: auto;
+    z-index: 1001;
+  }
+  
+  /* Menú de escritorio */
+  .navbar-desktop {
+    display: flex;
+    align-items: center;
+    gap: 1rem 4rem;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #4CAF50;
+  }
+  
+  .navbar-social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-social a {
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-social a:hover {
+    color: #4CAF50;
+  }
+  
+  /* Menú móvil */
+  .navbar-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+  }
+  
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background: #333;
+    clip-path: circle(0% at 100% 0%);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    z-index: 999;
+  }
+  
+  .navbar-menu.open {
+    width: 100vw;
+    height: 100vh;
+    clip-path: circle(150% at 100% 0%);
+  }
+  
+  .menu-content {
+   
+    position: relative;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 850px) {
+    .navbar-desktop {
+      display: none;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-menu .navbar-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .navbar-links a {
+        font-size: 2rem;
+    font-weight: 400;
+      }
+    .navbar-menu .navbar-social {
+
+      margin-top: 4rem;
+    }
+    .navbar-menu .navbar-social a{
+       font-size: 2rem;
+       width: 4rem;
+    }
+  }

@@ -1,0 +1,150 @@
+.carousel {
+    position: relative;
+    width: 100%;
+background-color: #333;
+    height: 65vh; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Contenedor de imágenes */
+  .carousel-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Efecto de despliegue lateral */
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Inicia fuera de la pantalla */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: left 1s cubic-bezier(0.1, 0, 0.2, 1); /* Curva de aceleración */
+  }
+  
+  .carousel-slide.active {
+    left:0; /* Posición final */
+  }
+  
+  .carousel-slide.next {
+    left: 100%; /* Posición inicial para la siguiente imagen */
+    z-index: 1; /* Asegura que la siguiente imagen esté sobre la actual */
+  }
+  
+  /* Recuadro de texto */
+  .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 0; /* Posición en un lateral */
+    transform: translateY(-50%);
+    width: auto;
+    max-width: 33%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 100%; /* 1/3 del espacio */
+    background: rgba(0, 128, 0, 0.6); /* Fondo verde con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de cristal */
+    display: flex;
+    border-radius: 10px ;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    padding: 0rem;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 2; /* Asegura que el texto esté sobre las imágenes */
+  }
+  
+  .carousel-text.show {
+    opacity: 1; /* Mostrar el texto */
+    height: 100%;
+    font-size: 1px;
+  }
+  
+  .carousel-text h2 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .carousel-text p {
+    margin: 1rem 4rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Controles de navegación */
+  .carousel-controls {
+    position: absolute;
+        bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 3; /* Asegura que los controles estén sobre las imágenes */
+  }
+  
+  .carousel-controls button {
+    background: rgba(5, 71, 27, 0.5);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .carousel-controls button:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Indicadores de imagen */
+  .carousel-indicators {
+    display: flex;
+    gap: 0.5rem;
+    
+  }
+  
+  .carousel-indicators span {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .carousel-indicators span.active {
+    background: rgb(7, 128, 23);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 950px) {
+    .carousel-controls {
+      display: none; /* Ocultar controles en móvil */
+    }
+  
+    .carousel-text {
+        max-width: 100%;
+        max-height: 70%;
+      width: 100%; /* Ocupar más espacio en móvil */
+      height: 70%;
+  margin: 0rem;
+      border-radius: 30px;
+      left: 0; /* Posición en un lateral */
+    }
+    .carousel-text h2{
+        margin: 0rem;
+        padding: 1rem;
+    }
+    .carousel-text p{
+        margin: 1rem;
+    }
+  }
