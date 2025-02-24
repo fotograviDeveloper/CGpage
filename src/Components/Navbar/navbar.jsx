@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faWhatsapp, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faMapMarkerAlt, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -12,7 +12,6 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Cerrar menú al cambiar tamaño de pantalla
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -33,10 +32,11 @@ const Navbar = () => {
       {/* Menú de escritorio */}
       <div className="navbar-desktop">
         <ul className="navbar-links">
-          <li><a href="/inicio">Inicio</a></li>
-          <li><a href="/servicios">Servicios</a></li>
-          <li><a href="/nosotros">Nosotros</a></li>
-          <li><a href="/contacto">Contacto</a></li>
+          <li><NavLink to="/">Inicio</NavLink></li>
+          <li><NavLink to="/servicios">Servicios</NavLink></li>
+          <li><NavLink to="/nosotros">Nosotros</NavLink></li>
+          <li><NavLink to="/Productos">Productos</NavLink></li>
+          <li><NavLink to="/contacto">Contacto</NavLink></li>
         </ul>
         <div className="navbar-social">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -67,10 +67,11 @@ const Navbar = () => {
         <div className="menu-content">
           {/* Secciones */}
           <ul className="navbar-links">
-            <li><a href="/inicio" onClick={toggleMenu}>Inicio</a></li>
-            <li><a href="/servicios" onClick={toggleMenu}>Servicios</a></li>
-            <li><a href="/nosotros" onClick={toggleMenu}>Nosotros</a></li>
-            <li><a href="/contacto" onClick={toggleMenu}>Contacto</a></li>
+            <li><NavLink to="/" onClick={toggleMenu}>Inicio</NavLink></li>
+            <li><NavLink to="/servicios" onClick={toggleMenu}>Servicios</NavLink></li>
+            <li><NavLink to="/nosotros" onClick={toggleMenu}>Nosotros</NavLink></li>
+            <li><NavLink to="/Productos" onClick={toggleMenu} >Productos</NavLink></li>
+            <li><NavLink to="/contacto" onClick={toggleMenu}>Contacto</NavLink></li>
           </ul>
 
           {/* Redes sociales */}

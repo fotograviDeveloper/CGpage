@@ -8,6 +8,13 @@
   box-sizing: border-box; 
   font-family: 'Montserrat', sans-serif;
 }
+h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
 
 body {
  

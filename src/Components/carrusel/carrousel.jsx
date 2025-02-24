@@ -6,7 +6,7 @@ const Carousel = () => {
   const [showText, setShowText] = useState(false);
 
   const images = [
-     {
+    {
       src: '/images/C_imagen1.png',
       title: 'Materiales que impulsan tus proyectos',
       description: 'En Comercializadora Garza, ofrecemos una amplia variedad de materiales esenciales para la construcción, urbanización y remodelación. Desde tuberías y conexiones hidráulicas hasta cables eléctricos y accesorios para acabados, contamos con todo lo necesario para hacer de tu proyecto un éxito.',
@@ -16,7 +16,6 @@ const Carousel = () => {
       title: ' Suministro eficiente',
       description: 'El tiempo es clave en cualquier obra, y en Comercializadora Garza lo entendemos. Nuestro compromiso es ofrecer un suministro puntual y eficiente, optimizando tiempos de entrega y reduciendo costos. Con nuestro equipo de expertos, brindamos asesoría personalizada para que tu proyecto avance sin contratiempos.',
     },
-   
     {
       src: '/images/C_imagen2.png',
       title: 'Climatización confiable con Mirage',
@@ -88,6 +87,11 @@ const Carousel = () => {
       <div className={`carousel-text ${showText ? 'show' : ''}`}>
         <h2>{images[currentIndex].title}</h2>
         <p>{images[currentIndex].description}</p>
+      </div>
+
+      {/* Botón en el lado derecho */}
+      <div className="carousel-right-button">
+       <a href='www.google.com'> <button className="carousel-button">Quiero realizar <br/>una cotización</button></a>
       </div>
 
       {/* Controles de navegación (solo en web) */}
