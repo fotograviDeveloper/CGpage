@@ -11,7 +11,7 @@ const PortadaNosotros = () => {
       <h1 className='portada-titulo'>Conoce un poco de nuestra historia</h1>
         <p className='portada-descripcion'>
         
-        asjfnasufnaunfpsjdna nosotros portada muestra insafoasnf conocenos
+       DESCRIPCION DE UN POCO SOBRE NOSOTROS
         </p>
       </div>
     </div>
