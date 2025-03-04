@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faWhatsapp, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faMapMarkerAlt, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -76,9 +76,9 @@ const Navbar = () => {
 
           {/* Redes sociales */}
           <div className="navbar-social">
-            <a href="https://www.facebook.com/comercializadora.garzamty" target="_blank" rel="noopener noreferrer">
+            <Link to="https://www.facebook.com/comercializadora.garzamty" >
               <FontAwesomeIcon icon={faFacebook} />
-            </a>
+            </Link>
             <a href="https://wa.me/tunumerodetelefono" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>

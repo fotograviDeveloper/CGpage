@@ -91,7 +91,7 @@ const Carousel = () => {
 
       {/* Botón en el lado derecho */}
       <div className="carousel-right-button">
-       <a href='www.google.com'> <button className="carousel-button">Quiero realizar <br/>una cotización</button></a>
+       <a href='/contacto'> <button className="carousel-button">Quiero realizar <br/>una cotización</button></a>
       </div>
 
       {/* Controles de navegación (solo en web) */}

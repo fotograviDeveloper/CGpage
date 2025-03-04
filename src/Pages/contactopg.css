@@ -1,0 +1,12 @@
+
+
+.botonCenter {
+    background-color: rgb(177, 177, 177);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.form02{
+    background-color: rgb(245, 245, 245);
+    padding: 2rem;
+}

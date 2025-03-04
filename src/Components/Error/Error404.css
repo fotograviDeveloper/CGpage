@@ -1,0 +1,55 @@
+/* Estilos para el contenedor principal */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Estilos para el contenido del error */
+  .error-content {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el título del error */
+  .error-title {
+    font-size: 6rem;
+    color: #c70202;
+    margin: 0;
+  }
+  
+  /* Estilos para el mensaje de error */
+  .error-message {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0 10px;
+  }
+  
+  /* Estilos para el submensaje de error */
+  .error-submessage {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para el botón de regresar al inicio */
+  .error-button {
+    background-color: #267029;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .error-button:hover {
+    background-color: #5ccc2f;
+  }
