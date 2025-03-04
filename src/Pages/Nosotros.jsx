@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-import QuieroCotizarButton from '../Botones/QuieroCotizar';
-import AboutSection from '../Information/nosotros/AboutSection';
-import PortadaNosotros from '../Portadas/PortadaNosotros';
+import QuieroCotizarButton from '../Components/Botones/QuieroCotizar';
+import AboutSection from '../Components/Information/nosotros/AboutSection';
+import PortadaNosotros from '../Components/Portadas/PortadaNosotros';
 const NosotrosPage = () => {
   return (
     <div>

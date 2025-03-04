@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactSectionForm from '../Components/Information/Forms/contactform/ContactSection'
+import ContactSectionForm from '../Sections/ContactSection'
 
 import Carousel from '../Components/carrusel/carrousel';
 import AboutSection from '../Components/Information/nosotros/AboutSection'

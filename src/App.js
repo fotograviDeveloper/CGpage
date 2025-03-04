@@ -7,7 +7,7 @@ import Footer from '../src/Components/footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/navbar';
 import ServiciosPage from './Components/Pages/Servicios';
-import NosotrosPage from './Components/Pages/Nosotros';
+import NosotrosPage from '../src/Pages/Nosotros';
 function App() {
   return (
     <div className="App">

@@ -1,0 +1,137 @@
+.contact-section {
+  padding:1rem 1rem;
+  background-color: #4CAF50; /* Fondo verde */
+  color: white; /* Texto blanco */
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Centrar horizontalmente */
+  gap: 3rem;
+  max-width:80%; /* Limitar el ancho máximo del contenido */
+  width: 100%; /* Ocupar el 100% del espacio disponible */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.contact-info {
+  flex: 1;
+  padding: 1rem;
+  max-width: 50%;
+  text-align: left;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.contact-form {
+  flex: 2;
+  background-color: white; /* Fondo blanco para el formulario */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  max-width: 600px; /* Ancho máximo del formulario */
+  width: 100%; /* Ocupar el 100% del espacio disponible */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ocupar el 100% del espacio disponible */
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #333; /* Color oscuro para las etiquetas */
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Fondo gris claro */
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #4CAF50; /* Borde verde al enfocar */
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical; /* Permitir redimensionar verticalmente */
+  min-height: 120px;
+}
+
+.submit-button {
+  background-color: #4CAF50; /* Color verde para el botón */
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ocupar el 100% del espacio disponible */
+}
+
+.submit-button:hover {
+  background-color: #45a049; /* Color verde oscuro al pasar el mouse */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem; /* Añadir padding para mejor espaciado */
+  }
+
+  .contact-info {
+    max-width: 100%; /* Ocupar el 100% del ancho en móviles */
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 1.5rem;
+    max-width: 100%; /* Ocupar el 100% del ancho en móviles */
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+  }
+}
